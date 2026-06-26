@@ -104,6 +104,22 @@ jobs:
         with:
           files: artifacts/*
           generate_release_notes: true
+      - name: Wait for release assets
+        run: |
+          for i in $(seq 1 10); do
+            echo "Attempt $i: checking release assets..."
+            ASSETS=$(gh api repos/${{ github.repository }}/releases/tags/v${{ steps.version.outputs.VERSION }} --jq '.assets | length')
+            if [ "$ASSETS" -ge 5 ]; then
+              echo "Release assets are available ($ASSETS assets)"
+              exit 0
+            fi
+            echo "Waiting 15 seconds..."
+            sleep 15
+          done
+          echo "Timed out waiting for release assets"
+          exit 1
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Switch to main branch
         run: |
           git checkout main
