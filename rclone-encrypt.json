@@ -1,0 +1,17 @@
+{
+  "homepage": "https://github.com/llm-supermarket-org/cli-qwen36plus-go",
+  "description": "CLI tool to encrypt and decrypt files using rclone-compatible cryptography",
+  "version": "0.0.0",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/llm-supermarket-org/cli-qwen36plus-go/releases/download/v0.0.0/rclone-encrypt-windows-amd64.exe",
+      "hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "bin": [
+        [
+          "rclone-encrypt-windows-amd64.exe",
+          "rclone-encrypt"
+        ]
+      ]
+    }
+  }
+}
