@@ -127,9 +127,13 @@ jobs:
       - name: Update Scoop manifest
         shell: pwsh
         run: ./updatescoop.ps1 -Version ${{ steps.version.outputs.VERSION }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Update Brew formula
         shell: pwsh
         run: ./updatebrew.ps1 -Version ${{ steps.version.outputs.VERSION }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Commit updated manifests
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
