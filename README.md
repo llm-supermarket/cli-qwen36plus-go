@@ -18,14 +18,14 @@ Rclone encryption uses:
 **Homebrew (macOS/Linux)**
 
 ```bash
-brew tap llm-supermarket-org/cli-qwen36plus-go https://github.com/llm-supermarket-org/cli-qwen36plus-go
+brew tap llm-supermarket/cli-qwen36plus-go https://github.com/llm-supermarket/cli-qwen36plus-go
 brew install rclone-encrypt
 ```
 
 **Scoop (Windows)**
 
 ```bash
-scoop bucket add rclone-encrypt https://github.com/llm-supermarket-org/cli-qwen36plus-go
+scoop bucket add rclone-encrypt https://github.com/llm-supermarket/cli-qwen36plus-go
 scoop install rclone-encrypt
 ```
 
@@ -159,7 +159,7 @@ Filenames can be encoded using different schemes:
 Requires Go 1.25+.
 
 ```bash
-git clone https://github.com/llm-supermarket-org/cli-qwen36plus-go
+git clone https://github.com/llm-supermarket/cli-qwen36plus-go
 cd cli-qwen36plus-go
 go build -o rclone-encrypt .
 ```

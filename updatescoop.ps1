@@ -3,7 +3,7 @@ param(
     [string]$Version
 )
 
-$repo = "llm-supermarket-org/cli-qwen36plus-go"
+$repo = "llm-supermarket/cli-qwen36plus-go"
 $tempDir = Join-Path ([System.IO.Path]::GetTempPath()) "rclone-encrypt-release-$Version"
 
 if (-not (Test-Path $tempDir)) {

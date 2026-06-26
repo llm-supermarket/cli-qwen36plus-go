@@ -8,7 +8,7 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/llm-supermarket-org/cli-qwen36plus-go/internal/crypt"
+	"github.com/llm-supermarket/cli-qwen36plus-go/internal/crypt"
 	"golang.org/x/term"
 )
 

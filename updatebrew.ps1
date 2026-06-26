@@ -3,7 +3,7 @@ param(
     [string]$Version
 )
 
-$repo = "llm-supermarket-org/cli-qwen36plus-go"
+$repo = "llm-supermarket/cli-qwen36plus-go"
 $platforms = @("darwin-amd64", "darwin-arm64", "linux-amd64", "linux-arm64")
 $formulaPath = "$PSScriptRoot/Formula/rclone-encrypt.rb"
 $tempDir = Join-Path ([System.IO.Path]::GetTempPath()) "rclone-encrypt-release-$Version"

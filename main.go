@@ -5,8 +5,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/llm-supermarket-org/cli-qwen36plus-go/internal/cli"
-	"github.com/llm-supermarket-org/cli-qwen36plus-go/internal/crypt"
+	"github.com/llm-supermarket/cli-qwen36plus-go/internal/cli"
+	"github.com/llm-supermarket/cli-qwen36plus-go/internal/crypt"
 )
 
 var version = "dev"
