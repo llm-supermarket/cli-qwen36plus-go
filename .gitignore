@@ -1,0 +1,6 @@
+*.exe
+*.bin
+rclone-encrypt
+rclone-encrypt-*
+dist/
+artifacts/
