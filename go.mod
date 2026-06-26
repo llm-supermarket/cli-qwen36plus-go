@@ -1,4 +1,4 @@
-module github.com/llm-supermarket-org/cli-qwen36plus-go
+module github.com/llm-supermarket/cli-qwen36plus-go
 
 go 1.25.4
 
